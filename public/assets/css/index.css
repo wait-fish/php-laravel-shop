@@ -1,0 +1,155 @@
+/* 内容区二*/
+.main2 .row>div>div{
+   border-radius: 5px;
+   overflow: hidden;
+   position: relative;
+}
+.main2 .row>div>div img {
+    transition: 0.8s;
+}
+
+.main2 .row>div>div:hover img{
+    transform: scale(1.1);
+}
+.main2 .row>div>div .main2-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    margin: 40px 0 0 30px;
+}
+.main2-text a,.main2-text a:hover{
+    display: inline-block;
+    margin-top: 10px;
+    color: #2b3f3e;
+    text-decoration: underline;
+}
+/* 新产品 */
+.newProducts .nav .nav-link.my-i {
+    font-size: 40px;
+    line-height: 20px;
+    margin: 0 5px;
+    font-weight: 100;
+    color: #e8e8e8;
+}
+.newProducts .nav .nav-link{
+    color: #999999;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.5s;
+    border-radius: 0;
+    padding-bottom: 0;
+}
+.newProducts .nav .nav-link:not(.my-i):hover {
+    border-bottom: 1px solid #FF324D;
+    padding-bottom: 8px;
+}
+.newProducts .nav .nav-link.active {
+    color: var(--title-hcolor);
+    background-color: transparent;
+    border-bottom: 1px solid #FF324D;
+    padding-bottom: 8px;
+}
+/* 过渡开始 */
+.my-list {
+    position: relative;
+    --time: 0.8s;
+    overflow: hidden;
+    transition: var(--time);
+    height: 360px;
+}
+.my-list:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+.my-list .img{
+    transition: var(--time);
+}
+.my-list .imgh{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: var(--time);
+}
+.my-list:hover .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.my-list:hover .imgh {
+    position: relative;
+    opacity: 1;
+}
+.my-list .my-box{
+    background-color: #fff;
+   transition: var(--time);
+}
+.my-list:hover .my-box{
+     transform: translateY(-65px);
+}
+.my-list h6 {
+    color: #445a69;
+    transition: 0.5s;
+}
+.my-list h6:hover {
+    color: var(--title-hcolor);
+}
+.my-list p {
+    color: #939ea9;
+    font-size: 14px;
+}
+.my-list p .price{
+    color: var(--title-hcolor);
+    font-size: 18px;
+}
+.my-list p:last-child {
+    letter-spacing: -5px;
+}
+.my-list p .icon-wujiaoxing {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: #fdcc0d;
+}
+.my-list button .icon-gouwuche{
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.my-list button{
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #ff324d;
+    color: #fff;
+    border-radius: 5px;
+    border-bottom: 3px solid #ef304a;
+}
+.my-list button span {
+    color: #fff;
+}
+/* 小版块 */
+.xiaobankuai {
+    width: 100%;
+    background-color: #fee5f0;
+}
+.xiaobankuai .box{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+}
+.xiaobankuai .box i {
+    font-size: 30px;
+}
+.xiaobankuai .box h5 {
+    color: #042825;
+    text-align: center;
+    width: 220px;
+    font-size: 18px;
+    opacity: 0.8;
+}

@@ -1,0 +1,243 @@
+:root {
+    --title-color: #292b2c;
+    --title-hcolor: #FF324D;
+    --st: "宋体";
+    user-select: none;
+}
+ul {
+    list-style: none;
+}
+a {
+   font-size: 16px;
+}
+a:hover {
+    text-decoration: none;
+}
+.iconfont {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.7;
+    color: var(--title-color);
+}
+/* top */
+.fish_top {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    background-color: #ff324d;
+    z-index: 3;
+    bottom: 5%;
+    right: 25px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.fish_top span{
+   color: #fff;
+   transition: 0.5s;
+}
+.fish_top:hover {
+    background-color: #f2f2f2;
+}
+.fish_top:hover span {
+    color: #ff324d;
+}
+/* 头部 */
+header {
+    background-color: #2a2a2a;
+    color: #fff;
+}
+header p {
+    padding-left: 40px;
+    font-size: 14px;
+}
+header a{
+    color: #fff;
+}
+header a:hover {
+    color: #fff;
+}
+/* 导航 */
+body>nav {
+    box-shadow: 0 2px 3px rgba(0,0,0,.05);
+    position: relative;
+}
+body>nav .icon-gouwudai{
+    position: relative;
+}
+nav .myCircle{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(70%,-70%);
+    width: 20px;
+    height: 20px;
+    background-color: #ff324d;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 50%;
+    color: #fff;
+}
+.navbar-nav .nav-item .nav-link{
+    color: var(--title-color);
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.55;
+    transition: 0.3s;
+    font-family: var(--st);
+}
+.navbar-nav .active .nav-link{
+    color: var(--title-hcolor)!important;
+    opacity: 0.9;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--title-hcolor);
+    opacity: 1;
+    text-shadow: 0 0 1px #ff6085;
+}
+.my-icons {
+    position: relative;
+}
+.my-icons a{
+    margin-left: 15px;
+}
+/* 搜索框 */
+.sreach-box {
+    position: absolute;
+    background-color: #f8f9fa;
+    width: 0;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+.sreach-box form{
+    min-width: 98%;
+    border-bottom: 2px solid #333333;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.sreach-box input {
+    width: 100%;
+}
+.sreach-box input,.sreach-box button {
+    outline: none;
+    border: none;
+    background-color: #f8f9fa;
+    font-family: var(--st);
+    font-size: 20px;
+}
+.sreach-box .icon-guanbi {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--title-hcolor);
+    margin-left: 10px;
+}
+/* 购物袋 */
+.gouwudai {
+    padding: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    right: 0;
+    width: 0;
+    font-size: 15px;
+    display: none;
+}
+.gouwudai img {
+    cursor: pointer;
+    width: 80px;
+    height: auto;
+}
+.gouwudai .media {
+    padding: 15px 0 ;
+    border-bottom: 1px solid #eaeaea;
+}
+.gouwudai .media .media-body .text {
+    cursor: pointer;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+.gouwudai .icon-guanbi {
+    font-weight: 500;
+    font-size: 14px;
+}
+.gouwudai .price {
+    color: #acacac;
+}
+.gouwudai .totoal-box {
+    padding: 0 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    color: #576b78;
+    justify-content: space-between;
+}
+.gouwudai .totoal-button {
+    display: flex;
+    justify-content: space-around;
+}
+.gouwudai .totoal-button .gocart {
+    color: #313538;
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid #d0d0d0;
+    background-color: #dcdada;
+    transition: 0.5s;
+}
+.gouwudai .totoal-button .gocart:hover {
+    background-color: #ff324d;
+    color: #fff;
+    border-bottom: 3px solid #eb1f3a;
+}
+.gouwudai .totoal-button .gototal {
+    width: 110px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    background-color: #ff324d;
+    color: #fff;
+    border-bottom: 3px solid #eb1f3a;
+    transition: 0.5s;
+}
+.gouwudai .totoal-button .gototal:hover {
+    background-color: #2a2a2a;
+    color: #fff;
+    border-bottom: 3px solid #191919;
+}
+/* 内容 */
+main {
+  width: 100%;
+}
+/* 页脚 */
+footer {
+    width: 100%;
+    color: #8c98a4;
+    font-size: 16px;
+    background-color: #2a2a2a;
+}
+footer li:first-child{
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 10px;
+}
+footer li {
+    font-family: var(--st);
+    padding: 5px 0;
+}
